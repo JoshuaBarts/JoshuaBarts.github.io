@@ -1,0 +1,614 @@
+/***** GLOBAL STYLES *****/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	scroll-behavior: smooth; /* gives you a smooth scrolling effect */
+	font-family: monospace; /* readable font */
+}
+
+.sectionSize {
+	height: 100vh;
+	width: 100%;
+}
+
+
+/***** HEADER AND NAV *****/
+
+header {
+	background-color: rgba(255,255,255,0.9); /* transparent white */
+	width: 100%;
+	background-size: cover;
+	position: fixed; /* header fixed on webpage */
+	top: 0;
+	height: 70px;
+	border-bottom: black 3px solid; /* a nice black border */
+	
+	padding: 20px;
+}
+
+#logo {
+	float: left; /* positions logo on left */
+	height: 110%;
+	width: 10%;
+}
+
+/***** Joe's CSS codes starts here *****/
+.nav {
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+}
+
+.menu {
+	margin: 0 30px 0 0;
+}
+
+.menu a {
+	clear: right;
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+	line-height: 90px;
+	font-size: 25px;
+	
+}
+
+.menu a:hover {
+	color: #a8dda8;
+}
+
+span {
+	color: black;
+}
+
+span:hover {
+	color: #a8dda8;
+}
+
+label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+
+#toggle {
+	display: none;
+}
+/***** Joe's codes ends here *****/
+
+#icon { /* my hamburger menu */
+	position: absolute;
+	right: 2%;
+	top: 16%;
+	width: 20%;
+}
+
+
+
+/***** VIDEO *****/
+
+.video video {
+	min-width: 100%; /* covers entire width of page */
+	min-height: 100%; /* covers entire height of page */
+	position: fixed; /* video is fixed and cannot be moved */
+	z-index: -100; /* lower priority */
+	top: 0;
+	overflow: hidden; 
+}
+
+#title {
+	text-align: center; 
+	position: absolute;
+	top: 35%;
+	left: 36%;
+	width: auto;
+	color: white;
+	z-index: -100;
+	font-family: 'Nanum Pen Script',cursive;
+	font-size: 40px;
+	text-shadow: 5px 5px 10px black;
+}
+
+
+/***** INFORMATION *****/
+
+.container { /* a container for the 3 facts section */
+	background: url(../images/yorushika-girl.png) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+}
+
+.charImg { /* images of 3 characters */
+	display: block;
+	height: 330px;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+.characterBox { /* boxes for the 3 albums */
+	float: left;
+	width: 30%;
+	margin: 100px 20px 20px 20px;
+}
+
+.infoText { /* contains the heading and paragraph */
+	text-align: center;
+	color: black;
+	background-color: rgba(255,255,255,0.8);
+	padding: 1px;
+
+}
+
+
+/***** STORY BOARD *****/
+
+.storyBackground { /* background should cover the story board section */
+	background: url(../images/yorushika-clouds.png);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+#textBackground { /* background for text to make it readable */
+    width: 90%;
+    margin: 65px;
+    padding: 20px;
+    height: 75%;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 5px 5px;
+}
+
+#textBackground {
+	color: black;
+	font-size: 19px;
+}
+
+#textBackground h1 {
+	margin-top: 0;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Nanum Pen Script',cursive;
+}
+
+
+/***** SIGN UP *****/
+
+#subscribe { /* contains the sign up section with a form and video */
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	display: block;
+}
+
+#formBox { /* contains the form and video */
+	position: relative;
+	top: 33%;
+	left: 27%;
+}
+
+#formBlock { /* contains the form */
+	display: block;
+	position: absolute;
+	text-align: center;
+	z-index: 3; /* gives priority over video */
+	left: 150px;
+	top: 30px;
+	border-radius: 20px;
+	padding: 0px;
+	width: 30%;
+	transition: all 700ms ease-in-out; 
+}
+
+.blurVid { /* contains the video */
+	display: block;
+	position: absolute;
+	left: 8%;
+	top: -75px;
+}
+
+#formVideo { /* targets the video */
+	filter: blur(4px); /* makes the video appear blurred */
+	border: 2px solid #f1f1f1; /*white(ish) border */
+	transition: all 700ms ease-in-out;
+	object-fit: cover; 
+	width: 500px;
+	height: 500px;
+}
+
+#formVideo:hover {
+	transform: scale(1.1); /* scales video when hovered */
+}
+
+#formBlock h1 {
+	font-size: 50px;
+	margin: 0;
+	color: white;
+	text-shadow: 5px 5px 10px black;
+	font-family: 'Nanum Pen Script',cursive;
+}
+
+#pText {
+	background-color: #a8dda8;
+	transform: skewX(-20deg);
+	color: black;
+}
+
+input[type=text] { /* contains input for Fullname */
+	width: 85%;
+ 	height: 35px;
+ 	margin-top: 0px;
+ 	margin-bottom: 5px;
+  	background-color: rgba(255,255,255,0.8); /* white(ish) transparent color */
+ 	border: none;
+  	border-bottom: 3px solid black; /* black border bottom */
+  	overflow: auto;
+ 	position: relative;
+  	transition: all 1s ease-in-out; /* gives transition for 1s */
+}
+
+input[type=text]:hover {
+	transform: scale(1.1); /* scales the input for fullname when hovered */
+}
+
+input[type=email] { /* contains input for email */
+	width: 85%;
+    height: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgba(255,255,255,0.8); /* white(ish) transparent color */
+    border: none;
+    border-bottom: 3px solid black; /* black border on bottom */
+    overflow: auto;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+input[type=email]:hover {
+	transform: scale(1.1); /* scales the input for email when hovered */
+}
+
+.button { /* contains the submit button */
+	width: 85%;
+    background: black; 
+    padding: 15px;
+    border: none;
+    border-radius: 35px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 45px;
+    transition: all 1s ease-in-out;
+} 
+
+.button:hover {
+	cursor: pointer; /* changes cursor when hovered */
+	background-color: rgba(106, 161, 120, 0.9);
+	transform: scale(1.1); /* scales button when hovered */
+}
+
+
+/***** @MEDIA QUERY FOR IPAD SIZE *****/
+
+/* changed some positioning and sizes to fit Ipad size */
+@media only screen 
+	and (max-width: 768px) { 
+	#logo {
+		width: 28%;
+		height: 80%;
+		position: absolute;
+		left: 0%;
+		bottom: 10px;
+	}
+
+	header {
+		background-position: -45px -30px;
+	}
+
+	label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu {
+		text-align: right;
+		width: 28%;
+		display: none;
+		position: absolute;
+		right: 1%;
+		top: 102%;
+	}
+
+	.menu a {
+		display: block;
+		border-bottom: 3px solid black;
+		margin: 0;
+		padding: 10px;
+		border-radius: 8px;
+		background-color: white;
+	}
+
+	#toggle:checked + .menu {
+		display: block;
+	}
+
+
+	#title {
+		text-align: center;
+		position: absolute;
+		top: 40%;
+		left: 25%;
+		width: auto;
+		color: white;
+		z-index: -100;
+	}
+	#informationSection {
+		height: 165vh;
+		width: 100%;
+	}
+
+	.container {
+		height: 200vh;
+		background-repeat: repeat;
+		background-size: auto;
+		
+	}
+	.characterBox {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+
+	#story {
+		height: 100vh;
+	}
+
+	.infoText {
+		padding: 5px;
+	}
+
+	.charImg {
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#formBox {
+		top: 20%;
+		left: 10%;
+	}
+
+	#formBlock {
+		left: 26%;
+		position: absolute;
+		top: 56px;
+	}
+
+	#formBlock h1 {
+		width: 133%;
+		position: relative;
+		left: -20%;
+		border-radius: 20px;
+	}
+
+	#formVideo {
+		width: 500px;
+		height: 500px;
+		object-fit: cover;
+	}
+
+	.blurVid {
+		z-index: -1;
+		position: absolute;
+		left: 7%;
+	}
+
+	input[type=text] {
+		width: 100%;
+		z-index: 3;
+	}
+
+	input[type=email] {
+		width: 100%;
+		
+	}
+
+}
+
+/***** @MEDIA QUERY FOR IPHONE SIZE *****/
+
+/* changed some positioning and sizes to fit iphone size */
+@media only screen 
+and (max-width: 500px) {
+	#logo {
+		width: 42%;
+		height: 70%;
+		position: absolute;
+		left: -9%;
+		bottom: 10px;
+	}
+	header {
+		background-position: -34px -1px;
+	}
+
+   	label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu {
+		text-align: center;
+		width: 18%;
+		display: none;
+		position: absolute;
+		right: 1%;
+		top: 102%;
+		padding: 0;
+	}
+
+	.menu a {
+		display: block;
+		border-bottom: 3px solid black;
+		margin: 0;
+		padding: 2px;
+		border-radius: 8px;
+		font-size: 12px;
+		width: 90%;
+	}
+
+	#toggle:checked + .menu {
+		display: block;
+	}
+
+	#icon {
+		position: absolute;
+		right: 8%;
+		top: 24%;
+		width: 29%;
+	}
+
+	#title {
+		text-align: center;
+		position: absolute;
+		top: 35%;
+		left: 4%;
+		width: auto;
+		color: white;
+		z-index: -100;
+		font-size: 37px;
+	}
+
+	#informationSection {
+		height: 240vh;
+		width: 100%;
+	}
+
+	.container {
+		height: 240vh;
+		background-size: contain;
+		background-repeat: repeat;
+	}
+
+	.characterBox {
+		width: 100%;
+		margin: 0;
+	}
+
+	.infoText {
+		padding: 5px;
+	}
+
+	.charImg {
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#story {
+		height: 127vh;
+	}
+
+	#textBackground {
+		width: 75%;
+		margin-top: 65px;
+	}
+
+	#textBackground p {
+		font-size: 12.5px;
+		padding: 5px;
+	}
+
+	#textBackground h1 {
+		font-size: 20px;	
+	}
+
+	.storyBackground {
+		background-position: bottom;
+		background-size: cover;
+	}
+
+	#formBox {
+		top: 20%;
+		left: -13%;
+	}
+
+	#formVideo {
+		width: 315px;
+		height: 500px;
+		object-fit: cover;
+		transition: all 700ms ease-in-out;
+	}
+
+	#formVideo:hover {
+		transform: scale(1.1);
+	}
+
+	#formBlock {
+		left: 29%;
+		position: absolute;
+		top: 30px;
+		width: 68%;
+	}
+
+	#formBlock h1 {
+		width: 87%;
+		position: relative;
+		left: 8%;
+		font-size: 40px;
+		
+	}
+
+	#pText {
+		width: 85%;
+		position: absolute;
+		left: 5%;
+	}
+
+	.blurVid {
+		z-index: -1;
+		width: 90%;
+		left: 19%;
+		transition: all 700ms ease-in-out;
+	}
+
+	.blurVid:hover {
+		transform: scale(1.1);
+	}
+
+	input[type=text] {
+		width: 90%;
+		left: 4%;
+		top: 67%;
+		position: absolute;
+	}
+
+	input[type=email] {
+		width: 90%;
+		left: 4%;
+		position: absolute;
+		top: 90%;
+	}
+
+	.button {
+		position: relative;
+		left: 3%;
+		bottom: -100px;
+		width: 67%;
+	}
+
+}

@@ -1,0 +1,147 @@
+<!-- This project is a one-page website. It is responsive to an Ipad, iPhone 6/7/8Plus,
+	 and Desktop screen sizes. This consist of a responsive menu bar, and 4 of the 
+	 following sections: 
+	 1. Video Section
+	 2. Information Section
+	 3. Story Board Section
+	 4. Sign Up Section
+-->
+
+<!-- I do not own the rights to these videos and images. All rights belong to the owner. No Copyright Infringement   		 Intended. 
+
+	 Subscribe to Yorushika.
+	 YouTube : https://www.youtube.com/channel/UCRIgIJQWuBJ0Cv_VlU3USNA
+	 Twitter: https://twitter.com/nbuna_staff
+-->
+
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8"> <!-- Unicode supports different languages -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- compatibility for mobile devices -->
+	<meta name="author" content="Joshua Bartolome">
+	<title>ICS 118 | Midterm</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+						
+	<header><!-- Header and Nav -->
+		<a href="#showcase"><img src="images/yorushika-logo.png" alt="logo" id="logo"></a>
+
+		<div class="nav"> <!-- Joe's code for nav bar -->
+		<label for="toggle"><img src="images/menu.png" id="icon"></label>
+		<input type="checkbox" id="toggle"/>
+			<div class="menu">
+				<div>
+				<a href="#showcase">HOME</a>
+				<a href="#informationSection">ALBUMS</a>
+				<a href="#story">YORUSHIKA</a>
+				<a href="#subscribe"><span>SUBSCRIBE</span></a>
+				</div>
+			</div>
+		</div>
+	</header><!-- End of Header and Nav --> 			  
+	   				
+	<section id="showcase" class="sectionSize"><!-- Video Section -->
+		<div class="video">
+			<video autoplay="true" muted="true" preload="auto" loop="true">
+				<source src="video/yorushika-video.mp4" type="video/mp4">
+				Your browser does not support HTML video. <!-- just in case.. -->
+			</video>
+			<div id="title">
+			<h1>YORUSHIKA FAN PAGE</h1>
+			<h3>ヨルシカ</h3> <!-- translated as "One Piece" -->
+			</div>
+		</div>
+	</section> <!-- End of Video Section -->
+
+
+	<section id="informationSection" class="sectionSize"><!-- Information Section -->
+		<div class="container">
+			<div class="characterBox">
+				<img src="images/album1.png" alt="luffy" class="charImg">
+				<div class="infoText">
+				<h1>Blur</h1>
+				<p>"Just by looking up at the clouds,
+				even today flows past my sight<br>
+				and I walk through the distant night I’d gazed up at<br>
+				To the point I’d mistaken it for spring<br>
+				Almost as if I had only lost sight of you I can only draw you<br>
+				as even the indigo in my sight spreads across the paper<br>
+				Walking through the distant sky I’d gazed up at,<br>
+				a deep indigo covers these eyes"</p>
+				</div>
+			</div>
+
+			<div class="characterBox">
+				<img src="images/album2.png" alt="zoro" class="charImg">
+				<div class="infoText">
+				<h1>Elma</h1>
+				<p>"I know some place, so far away that it hurts to say<br>
+				The midsummer day that both of us shared is still in that place<br>
+				The tears I cry, the words I hide, they won’t spill outside<br>
+				The one thing I know is that the shining blue sky goes and goes<br>
+
+				And in the end too, I never learned a single thing of you<br>
+
+				I know that you’re lying, that’s nothing new to me<br>
+				Elma, but still, it still hurts to see<br>
+				I’ll keep singing since it’s time for goodbye<br>
+				As time creeps into night until moonlight"</p>
+				</div>
+			</div>
+
+			<div class="characterBox">
+				<img src="images/album3.jpg" alt="sanji" class="charImg">
+				<div class="infoText">
+				<h1>A Loser Doesn't Need an Encore</h1>
+				<p>"One more lifetime, we don’t want to have regrets<br> so we want to howl<br>
+				Losing dogs live to howl<br>
+				I don’t even really want to see that face of yours<br> 
+				If I were to give a name to life<br>
+				“Hope” wouldn’t be the right word<br>
+				How many years have we been waiting, do you know?<br>
+				I’m a loser, so all I have is memories"</p>
+				</div>
+			</div>
+		</div><!-- end of .container -->
+	</section><!-- End of Information Section -->							
+
+	<section id="story" class="sectionSize"><!-- Story Board Section -->
+		<div class="storyBackground">
+
+			<div id="textBackground">
+			<h1>About Yorushika</h1>
+			<p>Yorushika is a Japanese rock duo founded in 2017 represented by Universal Music Japan. The group is composed of N-buna, a former vocaloid music producer, and Suis, a female vocalist. The duo is extremely secretive, never publicly revealing their faces or holding many concerts.</p>
+			<p>Yorushika is a project bringing together Vocaloid producer and illustrator n-buna with a vocalist named suis. They’ve been working together since 2017, and have actually attracted a lot of attention for a pretty young group up to this point. Multiple songs from Yorushika have racked up millions of views. Up until this point, their songs have been in the same jaunty rock zone as groups like Polkadot Stingray or Gesu No Kiwami Otome, with electric guitar being the foundation.</p>
+			<p>“That’s Why I Gave Up On Music” serves as the title song to their first full-length release, serving as the closer and highlight of the whole release. The album itself is solid but leans towards a familiar Japanese rock format where gentle piano melodies wrap around driving guitar and drums. It’s fine, but pluck a random CD off the Tower Records “rock” shelf and you can probably find something that sounds the same.</p>
+
+			<p>But “That’s Why I Gave Up On Music” stands out from the rest. That’s partially because of how the classical and rock touches come together to help give suis’ vocals a little extra lift.</p><br>
+
+			<p style="text-align: center">My love for n-buna transcends dimensions.</p>
+			</div>
+		</div>
+	</section><!-- End of Story Board Section -->
+
+	<section id="subscribe" class="sectionSize"><!--Sign up Section -->
+
+		<form id="formBox" action="#index.html" method="post"> <!-- completing the form takes you to video section -->
+			<div id="formBlock">
+				<h1>Love Yorushika?</h1>
+				<p id="pText">Subscribe to get daily newsletter.</p>
+				<input type="text" name="fullname" placeholder="Fullname" required="true"><br>
+				<input type="email" name="email" placeholder="Email" required="true"><br>
+				<button class="button">Subscribe</button>
+			</div>
+
+			<div class="blurVid">
+				<video id="formVideo" autoplay="true" muted="true" preload="auto" loop="true">
+				<source src="video/yorushika-video.mp4" type="video/mp4">	
+				</video>
+			</div>
+		</form><!-- End of Form -->
+	</section><!-- End of sign Up Section -->
+</body>
+</html>
